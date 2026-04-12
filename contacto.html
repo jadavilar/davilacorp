@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | DAVILACORP</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-soft">
+
+    <nav class="navbar solid-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="DAVILACORP Logo" class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="btn btn-nav-contact btn-small"><i class="ph ph-arrow-left"></i> Volver al Inicio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section contact-section fade-in">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h1 class="section-title align-left">Hablemos de valor</h1>
+                <p class="subtitle-contact">Déjenos sus datos y nuestro equipo se pondrá en contacto para explorar oportunidades conjuntas.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i class="ph ph-map-pin"></i>
+                        <div>
+                            <strong>Oficinas Centrales</strong>
+                            <p>Quito, Ecuador</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="ph ph-envelope-simple"></i>
+                        <div>
+                            <strong>Correo Corporativo</strong>
+                            <p>contacto@davilacorp.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form action="https://formspree.io/f/mvzveewg" method="POST" class="contact-form premium-card">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa (Opcional)</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Su compañía">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="correo@empresa.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Área de interés</label>
+                        <select id="asunto" name="asunto">
+                            <option value="Inversión">Inversión y Portafolio</option>
+                            <option value="Desarrollo">Desarrollo Inmobiliario</option>
+                            <option value="Holding">Información General</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Cómo podemos colaborar?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar mensaje <i class="ph ph-paper-plane-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="DAVILACORP" class="footer-logo">
+                <p>Capital con propósito</p>
+                <p class="location"><i class="ph ph-map-pin"></i> Quito, Ecuador</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/davila-corp" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://www.instagram.com/davilacorp.ec" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://www.facebook.com/davilacorp" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DAVILACORP. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
